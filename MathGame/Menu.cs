@@ -5,7 +5,7 @@ namespace MathGame
     internal class Menu
     {
         GameEngine game = new();
-        bool difficultySelected = false;
+        bool difficultySelected;
         DifficultyLevel diff;
         internal void ShowMenu(string name, DateTime date)
         {
@@ -93,7 +93,6 @@ E- Easy
 M- Medium
 H-Hard");
             var difficulty = Console.ReadLine();
-            //var diff = DifficultyLevel.Easy;
 
             switch (difficulty.Trim().ToLower())
             {

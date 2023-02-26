@@ -41,7 +41,19 @@ public class GameEngine
             {
                 Console.WriteLine("Correct! Press any button to continue");
                 Console.ReadLine();
-                score++;
+
+                if (difficulty == DifficultyLevel.Easy)
+                {
+                    score++;
+                }
+                else if (difficulty == DifficultyLevel.Medium)
+                {
+                    score += 2;
+                }
+                else
+                {
+                    score += 5;
+                }
             }
             else
             {
@@ -127,7 +139,19 @@ public class GameEngine
             {
                 Console.WriteLine("Correct! Press any button to continue");
                 Console.ReadLine();
-                score++;
+
+                if (difficulty == DifficultyLevel.Easy)
+                {
+                    score++;
+                }
+                else if (difficulty == DifficultyLevel.Medium)
+                {
+                    score += 2;
+                }
+                else
+                {
+                    score += 5;
+                }
             }
             else
             {
@@ -162,8 +186,20 @@ public class GameEngine
             if (int.Parse(guess) == firstNumber / secondNumber)
             {
                 Console.WriteLine("Correct! Press any key to continue");
-                score++;
                 Console.ReadLine();
+
+                if (difficulty == DifficultyLevel.Easy)
+                {
+                    score++;
+                }
+                else if (difficulty == DifficultyLevel.Medium)
+                {
+                    score += 2;
+                }
+                else
+                {
+                    score += 5;
+                }
             }
             else
             {
