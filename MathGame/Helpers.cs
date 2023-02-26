@@ -140,7 +140,7 @@ namespace MathGame
                 Difficulty = difficultyLevel,
                 TimeToFinsh = seconds,
                 NumberOfQuestions = questions
-            }) ; ;
+            }) ; 
         }
 
         internal static string ValidateResult(string guess)
